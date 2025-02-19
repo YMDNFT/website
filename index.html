@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 基础 Meta 标签（SEO优化） -->
+  <meta charset="UTF-8">
+  <meta name="description" content="YMD-NFT: A unique date-based NFT platform for copyright and market transactions.">
+  <meta name="keywords" content="YMD-NFT, NFT, blockchain, digital art, cryptocurrency">
+  <meta name="author" content="YMD-NFT Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph 标签（社交分享优化） -->
+  <meta property="og:title" content="YMD-NFT Official Website">
+  <meta property="og:description" content="A unique date-based NFT platform for copyright and market transactions.">
+  <meta property="og:image" content="image/logo.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  
+  <title>YMD-NFT Official Website</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* 重置与基础样式 */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f8f9fa; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    
+    /* Header 样式 */
+    header { background: #fff; padding: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+    nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo img { height: 50px; }
+    .nav-links { list-style: none; display: flex; }
+    .nav-links li { margin-left: 20px; }
+    .nav-links a { font-weight: 500; color: #333; }
+    .lang-switch button {
+      background: #007bff; border: none; color: #fff; padding: 8px 12px; margin-left: 5px;
+      cursor: pointer; border-radius: 4px; transition: background 0.3s;
+    }
+    .lang-switch button:hover { background: #0056b3; }
+    
+    /* 主体部分样式 */
+    main { padding: 60px 0; }
+    main h1, main h2 { color: #007bff; margin-bottom: 20px; }
+    main p { font-size: 1.1em; margin-bottom: 10px; }
+    section { margin-bottom: 40px; }
+    
+    /* Footer 样式 */
+    footer { background: #343a40; color: #fff; padding: 20px 0; text-align: center; }
+    
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      nav { flex-direction: column; }
+      .nav-links { flex-direction: column; margin-top: 10px; }
+      .nav-links li { margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <!-- Logo 区域 -->
+        <div class="logo">
+          <a href="#"><img src="image/logo.jpg" alt="YMD-NFT Logo"></a>
+        </div>
+        <!-- 导航菜单 -->
+        <ul class="nav-links">
+          <li><a href="#features" id="features-link">Features</a></li>
+          <li><a href="#future" id="future-link">Future</a></li>
+          <li><a href="#get" id="get-link">How to Get</a></li>
+          <li><a href="#contact" id="contact-link">Contact</a></li>
+          <li><a href="#whitepaper" id="whitepaper-link">Whitepaper</a></li>
+        </ul>
+        <!-- 语言切换按钮 -->
+        <div class="lang-switch">
+          <button onclick="switchLang('en')">EN</button>
+          <button onclick="switchLang('zh')">中文</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Main 内容 -->
+  <main class="container">
+    <!-- 首页 / 介绍 -->
+    <section id="home">
+      <h1 id="title">Welcome to YMD-NFT</h1>
+      <p id="desc">A unique date-based NFT platform for copyright and market transactions.</p>
+    </section>
+    
+    <!-- 特点介绍 -->
+    <section id="features">
+      <h2 id="features-title">Features</h2>
+      <p id="features-desc">YMD-NFT provides an innovative way to own and trade historical dates as NFTs.</p>
+    </section>
+    
+    <!-- 未来发展 -->
+    <section id="future">
+      <h2 id="future-title">Future Development</h2>
+      <p id="future-desc">We plan to integrate auctions, rarity classification, and metaverse applications.</p>
+    </section>
+    
+    <!-- 如何获取 -->
+    <section id="get">
+      <h2 id="get-title">How to Get YMD-NFT</h2>
+      <p id="get-desc">You can purchase YMD-NFTs on our marketplace or through community events.</p>
+    </section>
+    
+    <!-- 联系我们 -->
+    <section id="contact">
+      <h2 id="contact-title">Contact Us</h2>
+      <p id="contact-desc">Email: contact@ymdnft.com</p>
+    </section>
+    
+    <!-- 白皮书 -->
+    <section id="whitepaper">
+      <h2 id="whitepaper-title">Whitepaper</h2>
+      <p><a href="whitepaper.pdf" id="whitepaper-desc" target="_blank" rel="noopener">Download our whitepaper</a></p>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 YMD-NFT. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript：语言切换逻辑 -->
+  <script>
+    const content = {
+      en: {
+        title: "Welcome to YMD-NFT",
+        desc: "A unique date-based NFT platform for copyright and market transactions.",
+        "features-title": "Features",
+        "features-desc": "YMD-NFT provides an innovative way to own and trade historical dates as NFTs.",
+        "future-title": "Future Development",
+        "future-desc": "We plan to integrate auctions, rarity classification, and metaverse applications.",
+        "get-title": "How to Get YMD-NFT",
+        "get-desc": "You can purchase YMD-NFTs on our marketplace or through community events.",
+        "contact-title": "Contact Us",
+        "contact-desc": "Email: contact@ymdnft.com",
+        "whitepaper-title": "Whitepaper",
+        "whitepaper-desc": "Download our whitepaper",
+        "features-link": "Features",
+        "future-link": "Future",
+        "get-link": "How to Get",
+        "contact-link": "Contact",
+        "whitepaper-link": "Whitepaper"
+      },
+      zh: {
+        title: "欢迎来到 YMD-NFT",
+        desc: "一个基于日期的 NFT 平台，用于版权维护和市场交易。",
+        "features-title": "特点",
+        "features-desc": "YMD-NFT 提供了一种创新的方式来拥有和交易历史日期 NFT。",
+        "future-title": "未来发展",
+        "future-desc": "我们计划引入拍卖机制、稀有度分类和元宇宙应用。",
+        "get-title": "如何获取 YMD-NFT",
+        "get-desc": "您可以在我们的市场购买 YMD-NFT 或参与社区活动。",
+        "contact-title": "联系我们",
+        "contact-desc": "电子邮件：contact@ymdnft.com",
+        "whitepaper-title": "白皮书",
+        "whitepaper-desc": "下载我们的白皮书",
+        "features-link": "特点",
+        "future-link": "未来发展",
+        "get-link": "如何获取",
+        "contact-link": "联系我们",
+        "whitepaper-link": "白皮书"
+      }
+    };
+
+    function switchLang(lang) {
+      for (let key in content[lang]) {
+        let element = document.getElementById(key);
+        if (element) {
+          element.innerText = content[lang][key];
+        }
+      }
+    }
+  </script>
+</body>
+</html>
